@@ -1,6 +1,7 @@
 <!-- Task 2: HTML Form Elements -->
 <!-- Objective: Learn how to create a form with input fields, buttons, and a submit action. -->
-
+<h1>Welcome to Online Form</h1>
+    <p>Please fill the form below to know us about your programming knowledge!!!</p>
 <form action="/submit" method="post">
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" required>
@@ -8,20 +9,45 @@
     
     <label for="email">Email Address:</label>
     <input type="email" id="email" name="email" required>
+    
+
+    
+    <br><br>
+    
+    
+    <label for="tool"> Choose a favourite web scrapping tool:</label>
+    <select> name="tool" id="tool"
+    <option value="bs4">Bs4</option>
+    <option value="scrappy">Scrappy</option>
+    <option value="request">Request</option>
+    </select>
+    <br><br>
+    <label for="radio">Which is your favourite programming languages?</label><br>
+    <input type="radio" id="html" name="bahasa" value="Python">
+    <label for="python">Python</label><br>
+    <input type="radio" id="html" name="bahasa" value="JavaScript">
+    <label for="python">Javacript</label><br>
+    <input type="radio" id="html" name="bahasa" value="Golang">
+    <label for="python">Golang</label><br>
+
+    <label for="webscrapping">Your Feedback:</label>
+
+    <textarea id="webscrapping" name="webscrapping" rows="4" cols="50">
+
+    </textarea>
+    <br><br>
+    <input type="checkbox" id="terms">
+    <label for="terms"> Agree to terms and conditons </label>
+    <br><br>
+    <input type="hidden" value="date" name="username" />
+    <br><br>
+    <label for="start">Start date:</label>
+    <input type="date" id="start" name="trip-start" value="2025-02-10" min="2025-01-01" max="2025-12-31" />
+    <br><br>
+    <input type="reset">
     <br><br>
 
-    <button type="submit">Submit</button>
+    <button type="submit">Send</button>
+    <h5>Thank you for submitting this form. Have a nice day </h5>
+    
 </form>
-
-<!-- To-Do: 
-1. Add a `textarea` for entering feedback, labeled "Your Feedback".
-2. Create a `select` dropdown for the user to choose their favorite web scraping tool.
-3. Add a checkbox to agree to terms and conditions before submitting.
-4. Add a radio button group for selecting the preferred programming language (Python, JavaScript, etc.).
-5. Add a hidden input field to store the form submission date.
-6. Add an input field with a `type="date"` for choosing a preferred start date.
-7. Change the submit button text to "Send".
-8. Create a reset button that clears all input fields.
-9. Include a paragraph above the form explaining the purpose of the form.
-10. Add a small note below the submit button to thank users for their submission.
--->
