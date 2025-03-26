@@ -1,27 +1,91 @@
 <!-- Task 3: HTML Table -->
 <!-- Objective: Learn how to structure data in a table. -->
 
-<table border="1">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Email</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>John Doe</td>
-            <td>29</td>
-            <td>johndoe@example.com</td>
-        </tr>
-        <tr>
-            <td>Jane Smith</td>
-            <td>34</td>
-            <td>janesmith@example.com</td>
-        </tr>
-    </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px dashed black;
+        }
+        th, td {
+            border: 1px dashed black;
+            padding: 8px;
+            text-align: left;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <script>
+        function filterTable() {
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let rows = document.querySelectorAll("tbody tr");
+            rows.forEach(row => {
+                let name = row.cells[0].innerText.toLowerCase();
+                row.style.display = name.includes(input) ? "" : "none";
+            });
+        }
+    </script>
+</head>
+<body>
+    <h2>Employee Directory</h2>
+    <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Search for names..">
+    <br><br>
+    <table>
+        <caption>Employee Information</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Job Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://example.com/johndoe" target="_blank">John Doe</a></td>
+                <td>29</td>
+                <td>johndoe@example.com</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>34</td>
+                <td>janesmith@example.com</td>
+                <td>Project Manager</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>41</td>
+                <td>michaelbrown@example.com</td>
+                <td>Data Analyst</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>27</td>
+                <td>emilyjohnson@example.com</td>
+                <td>UI/UX Designer</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><strong>Total Age</strong></td>
+                <td colspan="3" id="totalAge"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        document.getElementById("totalAge").innerText = 
+            Array.from(document.querySelectorAll("tbody tr td:nth-child(2)")).reduce((sum, cell) => sum + parseInt(cell.innerText), 0);
+    </script>
+</body>
+</html>
 
 <!-- To-Do:
 1. Add two more rows to the table with different data.

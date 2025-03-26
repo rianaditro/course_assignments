@@ -1,6 +1,9 @@
 <!-- Task 2: HTML Form Elements -->
 <!-- Objective: Learn how to create a form with input fields, buttons, and a submit action. -->
 
+<!-- Form for user feedback and preferences -->
+<p>Please fill out this form to provide feedback and share your preferences.</p>
+
 <form action="/submit" method="post">
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" required>
@@ -10,7 +13,42 @@
     <input type="email" id="email" name="email" required>
     <br><br>
 
-    <button type="submit">Submit</button>
+    <label for="feedback">Your Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+    <br><br>
+
+    <label for="scraping-tool">Favorite Web Scraping Tool:</label>
+    <select id="scraping-tool" name="scraping-tool">
+        <option value="bs4">BeautifulSoup</option>
+        <option value="scrapy">Scrapy</option>
+        <option value="selenium">Selenium</option>
+        <option value="other">Other</option>
+    </select>
+    <br><br>
+
+    <label>Preferred Programming Language:</label>
+    <input type="radio" id="python" name="language" value="python" required>
+    <label for="python">Python</label>
+    <input type="radio" id="javascript" name="language" value="JavaScript" required>
+    <label for="javascript">JavaScript</label>
+    <input type="radio" id="java" name="language" value="Java" required>
+    <label for="java">Java</label>
+    <br><br>
+
+    <label for="start-date">Preferred Start Date:</label>
+    <input type="date" id="start-date" name="start-date">
+    <br><br>
+
+    <input type="hidden" name="submission-date" value="2025-03-24">
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the terms and conditions</label>
+    <br><br>
+
+    <button type="submit">Send</button>
+    <button type="reset">Reset</button>
+
+    <p>Thank you for your submission!</p>
 </form>
 
 <!-- To-Do: 
