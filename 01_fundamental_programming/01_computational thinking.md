@@ -34,26 +34,18 @@ This is an **algorithm** because it follows a **logical sequence of steps**.
 
     (answer here)
 
-5. **What is the difference between an algorithm and a process?**  
+5. **How do computers follow instructions differently than humans?**  
 
     (answer here)
 
-6. **How do computers follow instructions differently than humans?**  
+6. **What are some common mistakes people make when writing instructions for others?**  
 
     (answer here)
 
-7. **What are some common mistakes people make when writing instructions for others?**  
+7. **Why do some problems require multiple solutions instead of a single best solution?**  
 
     (answer here)
 
-8. **How can algorithmic thinking be applied in fields outside of computer science?**  
-
-    (answer here)
-
-9. **Why do some problems require multiple solutions instead of a single best solution?**  
-
-    (answer here)
-
-10. **How can you improve your problem-solving skills to think like a software engineer?**  
+8. **How can you improve your problem-solving skills to think like a software engineer?**  
 
     (answer here)
