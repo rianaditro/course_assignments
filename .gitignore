@@ -164,6 +164,12 @@ cython_debug/
 answer/
 Pip*
 test*
+<<<<<<< HEAD
+07_python_intermediate/ycombinator.csv
+07_python_intermediate/ycombinator.csv
+07_python_intermediate/ycombinator.py
+=======
 *.csv
 *.pdf
 on-progress
+>>>>>>> 5321a596f45e699ebacc20bc075b8cc1272e1b38

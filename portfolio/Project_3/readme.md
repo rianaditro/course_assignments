@@ -6,6 +6,7 @@ Build a pipeline that scrapes posts, comments, and reviews from social media sit
 #### **Industry:**  
 Digital Marketing, Social Media Analytics
 
+
 #### **Upwork Job Post Example:**  
 - [Example Job Post](https://www.upwork.com/jobs/~021758421868385800192)
 
