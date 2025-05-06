@@ -10,7 +10,43 @@
     <input type="email" id="email" name="email" required>
     <br><br>
 
-    <button type="submit">Submit</button>
+    <button type="submit">Submit</button><br><br>
+<!--1. Add a `textarea` for entering feedback, labeled "Your Feedback".-->
+    <textarea name="feedback" id="textarea">Your Feedback</textarea><br><br>
+<!--2. Create a `select` dropdown for the user to choose their favorite web scraping tool.--->
+    <label for="user">Favorite Web Scraping Tool:</label>
+    <select id="user" name="user">
+        <option value="scrapy">Scrapy</option>
+        <option value="playwright">Playwright</option>
+        <option value="pandas">Pandas</option>
+        <option value="numpy">Numpy</option>
+        <option value="beautifulsoup">BeautifulSoup</option>
+    </label><br><br>
+<!---3. Add a checkbox to agree to terms and conditions before submitting.-->
+    <form action="/check" method="post">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+    </form><br><br>
+<!--4. Add a radio button group for selecting the preferred programming language (Python, JavaScript, etc.).-->
+    <form action="/radio" method="post">
+        <p>Select your favorite programming language: </p>
+        <label>
+            <input type="radio" name="language" value="python">Python
+        </label><br>
+        <label>
+            <input type="radio" name="language" value="javascript">JavaScript
+        </label><br>
+        <label>
+            <input type="radio" name="language" value="php">Php
+        </label><br>
+        <label>
+            <input type="radio" name="language" value="cplus">C++
+        </label><br>
+        
+    </form><br><br>
+    <form action="/hidden" method="post">
+    <input type="hidden" name="hidden" id="hidden">
+</form>
 </form>
 
 <!-- To-Do: 
