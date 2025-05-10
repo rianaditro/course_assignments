@@ -164,6 +164,5 @@ cython_debug/
 answer/
 Pip*
 test*
-*.csv
 *.pdf
 on-progress
