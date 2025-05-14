@@ -33,30 +33,14 @@ END
 
     (answer here)
 
-4. **What are the basic building blocks of pseudocode, and how do they map to real programming concepts?**  
+4. **Write a pseudocode to checking if a number is even or odd?**  
 
     (answer here)
 
-5. **Given a simple task (e.g., checking if a number is even or odd), how would you write its pseudocode?**  
+5. **How would you write pseudocode to calculate the sum of all numbers in a list?**  
 
     (answer here)
 
-6. **How would you write pseudocode to calculate the sum of all numbers in a list?**  
-
-    (answer here)
-
-7. **What is the difference between sequential execution, selection (IF-ELSE), and iteration (loops) in pseudocode?**  
-
-    (answer here)
-
-8. **Why is indentation and structure important in pseudocode readability?**  
-
-    (answer here)
-
-9. **How do you test pseudocode to check if it works before converting it into a real program?**  
-
-    (answer here)
-
-10. **What challenges might arise when translating pseudocode into an actual programming language?**  
+6. **What is the difference between sequential execution, selection (IF-ELSE), and iteration (loops) in pseudocode?**  
 
     (answer here)

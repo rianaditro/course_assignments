@@ -33,30 +33,18 @@ An **algorithm** is a step-by-step set of instructions to solve a problem. Befor
 
     (answer here)
 
-4. **Can you think of an everyday task that can be represented as an algorithm? How would you write it?**  
+4. **What are the main components of a flowchart, and how do they help in understanding algorithms?**  
 
     (answer here)
 
-5. **What are the main components of a flowchart, and how do they help in understanding algorithms?**  
+5. **Find two different flowcharts for sorting numbers and compare their effectiveness.**  
 
     (answer here)
 
-6. **Find two different flowcharts for sorting numbers and compare their effectiveness.**  
+6. **Why is decision-making (IF-ELSE conditions) important in algorithms?**  
 
     (answer here)
 
-7. **Why is decision-making (IF-ELSE conditions) important in algorithms?**  
-
-    (answer here)
-
-8. **How would you modify a simple algorithm to handle unexpected errors or conditions?**  
-
-    (answer here)
-
-9. **What are the differences between linear and non-linear algorithms? Provide examples.**  
-
-    (answer here)
-
-10. **How can flowcharts help in debugging and understanding software systems?**  
+7. **How can flowcharts help in debugging and understanding software systems?**  
 
     (answer here)

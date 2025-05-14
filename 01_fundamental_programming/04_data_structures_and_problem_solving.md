@@ -26,7 +26,7 @@ Data structures help organize and store data efficiently. Choosing the right dat
 
     (answer here)
 
-2. **What are the differences between a list, an array, and a dictionary?**  
+2. **What are the differences between a list and a dictionary?**  
 
     (answer here)
 
@@ -38,26 +38,10 @@ Data structures help organize and store data efficiently. Choosing the right dat
 
     (answer here)
 
-5. **How would you design a system to efficiently store and retrieve large amounts of data?**  
+5. **Why do software engineers choose different data structures for different problems?**  
 
     (answer here)
 
-6. **What is the difference between static and dynamic data structures?**  
-
-    (answer here)
-
-7. **What are some real-world applications of data structures like stacks and queues?**  
-
-    (answer here)
-
-8. **Why do software engineers choose different data structures for different problems?**  
-
-    (answer here)
-
-9. **How does memory allocation impact the performance of data structures?**  
-
-    (answer here)
-
-10. **What is the relationship between problem-solving and choosing the right data structure?**  
+6. **How does memory allocation impact the performance of data structures?**  
 
     (answer here)
