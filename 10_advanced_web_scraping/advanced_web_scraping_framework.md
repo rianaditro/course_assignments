@@ -26,7 +26,7 @@ Scrapy may have a **learning curve**, but mastering it pays off significantly wh
 2. Push your project to GitHub.
 3. Submit your GitHub repository link here for evaluation.
 
-(submit here)
+[(submit here)](https://github.com/khilmi-aminudin/skechers-data-scrape)
 
 ## Reflection
 Scrapy automates many aspects of web scraping, but how would you handle a website that uses **dynamic content loading** (e.g., JavaScript-rendered pages) that Scrapy alone cannot scrape efficiently?  
