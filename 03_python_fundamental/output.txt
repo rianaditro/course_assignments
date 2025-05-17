@@ -1,0 +1,7 @@
+This is a sample text written to the file.
+It has multiple lines.
+line baru yang saya inputkan sendiri tanpa menghapus file lama.
+This is an additional line appended to the file.
+This is an additional line appended to the file.
+This is an additional line appended to the file.
+This is an additional line appended to the file.
