@@ -1,0 +1,2 @@
+Ini baris pertama untuk file baru.
+Dan Ini baris kedua untuk file baru.
