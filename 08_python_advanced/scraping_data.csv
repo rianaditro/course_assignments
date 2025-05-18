@@ -1,0 +1,8 @@
+name,age,email,rate,join_date
+Alice,25,alice@example.com,$20.5,2004-01-10
+bob,30,my email is bob30@example.com,$35,2020/01/12
+Charlie,20,charlie@example.com,$20,2004-01-15
+David,40,,45.0,2004-01-15
+,,,,
+Frank,35,frank@example.com,20,2004-01-25
+Grace,28,grace@example.com,30,2004-12-01
