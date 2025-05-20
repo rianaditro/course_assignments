@@ -8,7 +8,7 @@ By the end of this exercise, you will have a strong foundational knowledge of ho
 ## **Questions**  
 1. **What are the main components of a URL, and what is the function of each component?**  
 
-    (answer here)
+    example
 
 2. **What is the Domain Name System (DNS), and why is it essential for internet functionality?**  
 
