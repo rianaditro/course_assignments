@@ -2,26 +2,104 @@
 <!-- Objective: Learn how to apply styles to HTML elements. -->
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS Responsive Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+/* 1. Add a background color to the body. */
+            background-color: rgb(21, 179, 105);
+/* 7. Add some margin and padding to the body to ensure content doesn’t touch the edges. */
+            margin: 0;
+            padding: 20px;
+/* 9. Use CSS Flexbox to center align elements in the body. */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         h1 {
-            color: #4CAF50;
+/* 2. Change the color of the `h1` to blue and apply a different font family. */
+            color: rgb(91, 91, 236);
+            font-family: 'Times New Roman', Times, Arial, Helvetica, sans-serif;
+/* 8. Apply a different font style to the page title (`h1`). */
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
         p {
-            font-size: 16px;
+/* 3. Increase the font size of the paragraph text. */
+            font-size: 20px;
         }
         .important {
+/* 4. Add a border to the `important` class paragraph with padding. */
             font-weight: bold;
             color: red;
+            border: 3px solid black;
+            padding: 20px;
+            border-radius: 6px;
+            background-color: blueviolet;
+        }
+        .button {
+/* 5. Create a `button` class and style buttons with color and hover effects. */
+            background-color: dodgerblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: deepskyblue;
+            transform: scale(1.1);
+        }
+/* 6. Set a specific width for the page content and center it. */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header h1{
+            font-size: 40px;
+            text-align: center;
+            color: aquamarine;
+        }
+        section{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+/* 10. Create a responsive design that adjusts for mobile devices. */
+        @media(max-width: 768px){
+            body{
+                padding: 10px;
+            }
+            header h1{
+                font-size: 30px;
+            }
+            section{
+                padding: 10px;
+            }
+            .container{
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Introduction to CSS</h1>
-    <p>This is a basic example of CSS styling.</p>
-    <p class="important">This text is styled with the 'important' class.</p>
+<header>
+    <h1>Responsive Design</h1>
+</header>
+<section>
+    <div class="container">
+        <h1>Introduction to CSS</h1>
+        <p>This is a basic example of CSS styling.</p>
+        <p class="important">This text is styled with the 'important' class.</p>
+        <button class="button">Click Me</button>
+    </div>
+</section>
 </body>
 
 <!-- To-Do:
