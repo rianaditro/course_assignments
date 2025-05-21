@@ -1,12 +1,39 @@
 <!-- Task 3: HTML Table -->
 <!-- Objective: Learn how to structure data in a table. -->
 
+<!--4. Apply a CSS style to alternate row colors for better readability.-->
+<style>
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, th, td{
+        border: 1px dashed black;/*7. Change the border style of the table to `dashed`.*/
+    }
+    th, td{
+        padding: 5px;
+        text-align: left;
+    }
+    th{
+        background-color: rgb(0, 255, 42);
+        text-align: center;
+    }
+    caption{
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+</style>
 <table border="1">
+<!--3. Add a `<caption>` to describe the table.-->
+    <caption>Employee Information</caption>
     <thead>
         <tr>
             <th>Name</th>
             <th>Age</th>
             <th>Email</th>
+            <th>Job Title</th>
         </tr>
     </thead>
     <tbody>
@@ -14,15 +41,167 @@
             <td>John Doe</td>
             <td>29</td>
             <td>johndoe@example.com</td>
+            <td>Software Engineer</td>
         </tr>
+<!--2. Add a column to the table for the person's job title.-->
         <tr>
             <td>Jane Smith</td>
             <td>34</td>
             <td>janesmith@example.com</td>
+            <td>Product Manager</td>
         </tr>
+<!--1. Add two more rows to the table with different data.-->
+        <tr>
+            <td>Robi Darwis Mauludin</td>
+            <td>38</td>
+            <td>rdmdev2022@gmail.com</td>
+            <td>Web Developer</td>
+        </tr>
+        <tr>
+            <td>Asfarizal Alfauzan Darwis</td>
+            <td>6</td>
+            <td>asfarizalalfauzan@gmail</td>
+            <td>Web Scraper</td>
+        </tr>
+<!--6. Use a `<tfoot>` section for the summary row.-->
+        <tfoot>
+        <tr>
+            <th>Total</th><!--5. Add a "Total" row that sums up the ages in the table.-->
+            <th>107</th>
+        </tr>
+        </tfoot>
     </tbody>
-</table>
+</table><br><br>
+<!--8. Create a table with nested rows or columns for a more complex structure.-->
+<table border="2" id="table2">
+    <tr>
+        <td>Photo</td>
+        <td>profile
+            <table border="2">
+            <tr>
+                <td><a href="https://www.instagram.com">Instagram</a></td>
+                <td><a href="https://www.facebook.com">Facebook</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://medium.com">Medium</a></td>
+                <td><a href="https://www.upwork.com">Upwork</a></td>
+            </tr>
+        </table>
+        </td>
+        
+    </tr>
+    <tr>
+        <td>Name : Robi Darwis Mauludin</td>
+        <td>Email :   rdmdev2022@gmail.com</td>
+    </tr>
 
+    <tr>
+        <td>Photo</td>
+        <td>profile
+            <table border="2">
+            <tr>
+                <td><a href="https://www.instagram.com">Instagram</a></td>
+                <td><a href="https://www.facebook.com">Facebook</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://medium.com">Medium</a></td>
+                <td><a href="https://www.upwork.com">Upwork</a></td>
+            </tr>
+            
+        </table>
+        </td>
+        
+    </tr>
+    <tr>
+        <td>Name : Galuh Asih Tri Rahayu</td>
+        <td>Email :   galuhrahayu1999@gmail.com</td>
+    </tr>
+<tr>
+        <td>Photo</td>
+        <td>profile
+            <table border="2">
+            <tr>
+                <td><a href="https://www.instagram.com">Instagram</a></td>
+                <td><a href="https://www.facebook.com">Facebook</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://medium.com">Medium</a></td>
+                <td><a href="https://www.upwork.com">Upwork</a></td>
+            </tr>
+        </table>
+        </td>
+        
+    </tr>
+    <tr>
+        <td>Name : Asfarizal Alfauzan Darwis</td>
+        <td>Email :   faf42019@gmail.com</td>
+    </tr>
+<tr>
+        <td>Photo</td>
+        <td>profile
+            <table border="2">
+            <tr>
+                <td><a href="https://www.instagram.com">Instagram</a></td>
+                <td><a href="https://www.facebook.com">Facebook</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://medium.com">Medium</a></td>
+                <td><a href="https://www.upwork.com">Upwork</a></td>
+            </tr>
+            
+        </table>
+        </td>
+        
+    </tr>
+    <tr>
+        <td>Name : Nadya Rismalia Salsabila</td>
+        <td>Email :   rismalia@gmail.com</td>
+    </tr>
+<tr>
+        <td>Photo</td>
+        <td>profile
+            <table border="2">
+            <tr>
+                <td><a href="https://www.instagram.com">Instagram</a></td>
+                <td><a href="https://www.facebook.com">Facebook</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://medium.com">Medium</a></td>
+                <td><a href="https://www.upwork.com">Upwork</a></td><!--10. Add a clickable link in one of the table cells that leads to a person's profile page.-->
+            </tr>
+            
+        </table>
+        </td>
+        
+    </tr>
+    <tr>
+        <td>Name : Nadia Putri Darwis</td>
+        <td>Email :   ndp2025@gmail.com</td>
+    </tr>
+
+</table>
+<!--9. Add a filter above the table to search for names.-->
+<h2>Search Name</h2>
+<input type="text" id="filtername" onkeyup="myFunction()" placeholder="Search for names">
+<script>
+    function filtertable() {
+        const input = document.getElementById("filtername");
+        const filter = input.value.toUpperCase();
+        const table = document.getElementById("table2");
+        const tr = table.getElementsByTagName("tr");
+        for (let i = 0; i < tr.length; i++) {
+            const td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                const textvalue = td.textContent || td.innerText;
+                if (textvalue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
 <!-- To-Do:
 1. Add two more rows to the table with different data.
 2. Add a column to the table for the person's job title.

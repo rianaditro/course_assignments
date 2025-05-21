@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        nav{
+            background-color: #332e2e;
+            color: #fff;
+            padding: 10px;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            color: white;
+            font-size: 24px;
+            border: none;
+        }
+        .nav-link {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-link li {
+            margin-right: 20px;
+        }
+        .nav-link li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .dropdown {
+            display: none;
+            flex-direction: column;
+            background-color: #444;
+        }
+        .dropdown a {
+            padding: 8px;
+            border-top: 1px solid #555;
+        }
+        /* mobile style */
+        @media (max-width: 600px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-link {
+                display: none;
+                flex-direction: column;
+            }
+            .nav-link.show {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()"> =</button>
+            <ul class="nav-link" id="navLinks">
+                <li><a href="04_multipage.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li>
+                    <a href="#" onclick="toggleDropdown(event)">More</a>
+                    <div class="dropdown" id="dropdown">
+                        <a href="blog.html">Blog</a>
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; max-width: 400px; margin: auto; padding: 20px;">
+                <a href="blog.html" style="text-decoration: none; padding: 10px 20px; background-color: cadetblue; color: white; border-radius: 5px;">Previous</a>
+                <a href="index.html" style="text-decoration: none; padding: 10px 20px; background-color: cadetblue; color: white; border-radius: 5px;">Next</a>
+            </div>
+        </nav>
+    </header>
+    <main><h2>Welcome To About</h2></main>
+    <script>
+        function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('show');
+        }
+        function toggleDropdown(event) {
+            e.preventDefault();
+            document.getElementById('dropdown').style.display =
+                document.getElementById('dropdown').style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+    <footer style="background-color: #333; color: white; text-align: center; padding: 15px 0;">
+        <nav>
+            <a href="privacy.html" style="color: white; margin: 0 10px; text-decoration: none;">Privacy Policy</a>
+            |
+            <a href="terms.html" style="color: white; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </nav>
+        <p style="margin-top: 10px; font-size: 14px;">&copy; 2025 Robi Darwis Mauludin</p>
+    </footer>
+</body>
+</html>

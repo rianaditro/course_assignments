@@ -1,13 +1,212 @@
 <!-- Task 4: Multipage Navigation -->
 <!-- Objective: Learn how to create navigation between multiple pages. -->
 
-<nav>
+<<!-- <nav>
     <ul>
         <li><a href="page1.html">Page 1</a></li>
         <li><a href="page2.html">Page 2</a></li>
         <li><a href="page3.html">Page 3</a></li>
     </ul>
-</nav>
+</nav> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        nav{
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            color: white;
+            font-size: 24px;
+            border: none;
+        }
+        .nav-link {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-link li {
+            margin-right: 20px;
+        }
+        .nav-link li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .dropdown {
+            display: none;
+            flex-direction: column;
+            background-color: #444;
+        }
+        .dropdown a {
+            padding: 8px;
+            border-top: 1px solid #555;
+        }
+        /* mobile style */
+        @media (max-width: 600px) {
+        .menu-toggle {
+            display: block;
+            }
+        .nav-link {
+            display: none;
+            flex-direction: column;
+            }
+        .nav-link.show {
+            display: flex;
+            }
+/* 6. Implement "active" class on the current page in the navigation list. */
+        nav a{
+            text-decoration: none;
+            padding: 10px 15px;
+            color: #fff;
+            }
+        nav a.active{
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            }
+        .nav{
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(83, 71, 71);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 10px 20px;
+            }
+/* 10. Style the navigation links with CSS to make them more user-friendly. */
+        .nav li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .nav li a:hover{
+            background-color: #007bff;
+            color: white;   
+        }
+        .nav li a:active
+        .nav li a:focus{
+            outline: none;
+            background-color: #007bff;
+            color: white;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+<!-- 4. Add a dropdown menu in the navigation for mobile users. -->
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()"> =</button>
+            <ul class="nav-link" id="navLinks">
+                <li><a href="04_multipage.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li>
+                    <a href="#" onclick="toggleDropdown(event)">More</a>
+                    <div class="dropdown" id="dropdown">
+                        <a href="blog.html">Blog</a>
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li><!--1. Create a new HTML page with some content and add it to the navigation.-->
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+<!-- 3. Add a "previous" and "next" button for page navigation (using anchor tags). -->
+            <div style="display: flex; justify-content: space-between; max-width: 400px; margin: auto; padding: 20px;">
+                <a href="#" style="text-decoration: none; padding: 10px 20px; background-color: cadetblue; color: white; border-radius: 5px;">Previous</a>
+                <a href="index.html" style="text-decoration: none; padding: 10px 20px; background-color: cadetblue; color: white; border-radius: 5px;">Next</a>
+            </div>
+        </nav>
+        <nav>
+            <div>Search</div>
+                <input type="text" id="search" placeholder="Search...">
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+    <!-- 9. Include a link in the navigation for an external resource on web scraping. -->
+                <li><a href="https://www.revou.co/panduan-teknis/web-scraping-python" target="_blank" rel="noopener noreferrer">Web Scraper</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to the page learn python scraping in an easy to understand and understandable way</h2>
+        <section style="height: 2000px;">
+            <p>welcome to the python scraping learning web. where you iwll learn about the stages of doing python scraping in a simple and easy to understand way. before web do python scraping there are several things that must be prepared first, including the following:</p>
+                <ul>
+                    <li>install the required libraries and tools</li>
+                    <li>connect to the website where the scraping process will be carried out</li>
+                    <li>convert data from HTML</li>
+                    <li>retrieve the desired data</li>
+                    <li>display the desired data</li>
+                </ul>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('show');
+        }
+        function toggleDropdown(event) {
+            e.preventDefault();
+            document.getElementById('dropdown').style.display =
+                document.getElementById('dropdown').style.display === 'flex' ? 'none' : 'flex';
+        }
+        const currentPage = window.location.pathname.split("/").pop;
+        const navLinks = document.querySelectorAll("nav a");
+
+
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute("href");
+            if (linkPage === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    const searchBar = document.getElementById("searchBar");
+    const contentList = document.getElementById("contentList");
+    const items = contentList.getElementsByTagName("li");
+
+    searchBar.addEventListener('keyup', function(){
+        const query = this.value.toLowerCase();
+        for (let item of items){
+            item.style.display = item.textContent.toLowerCase().includes(query) ? '' : 'none';
+        }
+    });
+    </script>
+<!-- 5. Create a footer navigation that links to privacy policy and terms of service. -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 15px 0;">
+        <nav>
+            <a href="privacy.html" style="color: white; margin: 0 10px; text-decoration: none;">Privacy Policy</a>
+            |
+            <a href="terms.html" style="color: white; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </nav>
+        <p style="margin-top: 10px; font-size: 14px;">&copy; 2025 Robi Darwis Mauludin</p>
+    </footer>
+</body>
+</html>
 
 <!-- To-Do:
 1. Create a new HTML page with some content and add it to the navigation.
