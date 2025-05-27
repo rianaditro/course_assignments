@@ -1,6 +1,7 @@
 <!-- Task 2: HTML Form Elements -->
 <!-- Objective: Learn how to create a form with input fields, buttons, and a submit action. -->
-
+<!--9. Include a paragraph above the form explaining the purpose of the form.--->
+    <p>Please fill in the form below, about your personal data (name, email, and date) then press submit after inputting the data. and press reset to delete the data in the column</p>
 <form action="/submit" method="post">
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" required>
@@ -9,8 +10,64 @@
     <label for="email">Email Address:</label>
     <input type="email" id="email" name="email" required>
     <br><br>
-
     <button type="submit">Submit</button>
+    <h5>thank you for cooperation</h5><br>
+<!--1. Add a `textarea` for entering feedback, labeled "Your Feedback".-->
+    <textarea name="feedback" id="textarea">Your Feedback</textarea><br><br>
+<!--2. Create a `select` dropdown for the user to choose their favorite web scraping tool.--->
+    <label for="user">Favorite Web Scraping Tool:</label>
+    <select id="user" name="user">
+        <option value="scrapy">Scrapy</option>
+        <option value="playwright">Playwright</option>
+        <option value="pandas">Pandas</option>
+        <option value="numpy">Numpy</option>
+        <option value="beautifulsoup">BeautifulSoup</option>
+    </label><br><br>
+<!---3. Add a checkbox to agree to terms and conditions before submitting.-->
+    <form action="/check" method="post">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+    </form><br><br>
+<!--4. Add a radio button group for selecting the preferred programming language (Python, JavaScript, etc.).-->
+    <form action="/radio" method="post">
+        <p>Select your favorite programming language: </p>
+        <label>
+            <input type="radio" name="language" value="python">Python
+        </label><br>
+        <label>
+            <input type="radio" name="language" value="javascript">JavaScript
+        </label><br>
+        <label>
+            <input type="radio" name="language" value="php">Php
+        </label><br>
+        <label>
+            <input type="radio" name="language" value="cplus">C++
+        </label><br>
+        
+    </form><br><br>
+<!--5. Add a hidden input field to store the form submission date.-->
+    <form id="date" action="/submit" method="post">
+        <label for="Send">Add a hidden input field to store the form submission date:</label><br><br>
+        <input type="hidden" id="submissiondate " name="submissiondate">
+        <button type="submit">Submit</button>
+        
+    </form>
+<!--6. Add an input field with a `type="date"` for choosing a preferred start date.-->
+    <label for="stardate">Preferred Start Date:</label><input type="date" id="stardate" name="stardate"></label>
+    <input type="date" name="stardate" id="stardate"><br><br>
+    <form action="/submit" method="post">
+    </form>
+<!--7. Change the submit button text to "Send".-->
+    <label for="Send">Change the submit button text to "Send":</label><br><br>
+    <button type="submit">Send</button><br><br>
+<!--8. Create a reset button that clears all input fields.-->
+    <form id="reset" action="/reset" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email"><br><br>
+        <button type="reset">Reset</button>
+    </form>
 </form>
 
 <!-- To-Do: 

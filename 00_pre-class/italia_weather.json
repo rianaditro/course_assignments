@@ -1,0 +1,47 @@
+{
+    "coord": {
+        "lon": 12.8333,
+        "lat": 42.8333
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 15.87,
+        "feels_like": 15.52,
+        "temp_min": 15.87,
+        "temp_max": 15.87,
+        "pressure": 1012,
+        "humidity": 77,
+        "sea_level": 1012,
+        "grnd_level": 930
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.14,
+        "deg": 224,
+        "gust": 3
+    },
+    "rain": {
+        "1h": 0.62
+    },
+    "clouds": {
+        "all": 55
+    },
+    "dt": 1747839594,
+    "sys": {
+        "country": "IT",
+        "sunrise": 1747798825,
+        "sunset": 1747852224
+    },
+    "timezone": 7200,
+    "id": 3175395,
+    "name": "Italy",
+    "cod": 200
+}

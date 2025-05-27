@@ -16,8 +16,6 @@
      - Install POSTMAN from [here](https://www.postman.com/downloads/).
      - Create a new GET request.
 
----
-
 ### Task Details
 
 #### Part 1: Fetch Current Weather Data for Multiple Cities
@@ -97,6 +95,9 @@
 - Add a self-reflection text that explains your understanding of these topics.
 
 ---
+self reflection
+
+there are several stages in experiment of scanning the weather pre-test in particular city using the API key from the weather API and testing with the postman application. there several results obtained from the process including (coordinate points, weather conditions, location base, wind speed, temperature, humidity, rain, clouds and time zone).
 
 ### Grading Criteria (Total: 10 Points)
 1. Part 1: Fetch Current Weather Data for Multiple Cities (2 points)
