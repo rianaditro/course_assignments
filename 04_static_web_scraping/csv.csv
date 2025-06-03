@@ -1,0 +1,7 @@
+,Name,Age,City,Salary,Married
+0,John Doe,25,New York,1.0,
+1,Nadia,31,London,2.0,
+2,Serena,23,Paris,3.0,
+3,Tessa,17,Tokyo,4.0,
+4,Una,23,Sydney,5.0,
+0,Victoria,30,New York,,True
