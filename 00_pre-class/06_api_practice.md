@@ -42,6 +42,10 @@
    - Save the JSON response for each city into a separate file named `cityname_weather.json`.
      - Example: `london_weather.json`, `paris_weather.json`, `newyork_weather.json`.
 
+   https://drive.google.com/file/d/1iEyPzEWzT_S7sz8dmqVykrVefYRz-Iqz/view?usp=drive_link
+   https://drive.google.com/file/d/1mRI5cmXu-nwU1eC1sEcf3JlF0LIEIo3n/view?usp=drive_link
+   https://drive.google.com/file/d/1S3TcqxA5e2ktOGHyG2Bw_MjcD7F7_oe8/view?usp=drive_link
+
 ---
 
 #### Part 2: Fetch 5-Day/3-Hour Weather Forecast for a Specific City
@@ -65,6 +69,8 @@
 3. **Save Results**:
    - Save the JSON response into a file named `cityname_forecast.json`.  
      - Example: `newyork_forecast.json`.
+
+     https://drive.google.com/file/d/1z7N9Xi5NauYiN5L1xUaPQJso-WzfOAnf/view?usp=drive_link
 
 ---
 
@@ -96,7 +102,7 @@
   - `cityname_forecast.json` for the 5-day forecast.
 - Add a self-reflection text that explains your understanding of these topics.
 
----
+openweathermap.org website provides weather data. it provide API key that can be used for access weather data according user need. weather data can be proccessed further depends on client needs.
 
 ### Grading Criteria (Total: 10 Points)
 1. Part 1: Fetch Current Weather Data for Multiple Cities (2 points)
